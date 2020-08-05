@@ -79,16 +79,19 @@ img.logo {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: minmax(250px, auto);
   grid-gap: 1rem;
-  margin: 1em auto 0;
-  max-width: 80%;
+  margin: 1em auto;
+  max-width: 95%;
 }
 
 .card {
   display: flex;
   flex-flow: column;
-  padding: 1rem;
+  padding: 1em;
 }
 
+.card > img, .card > h3 {
+  margin: .5em auto;
+}
 
 .button {
   padding: 1em;
