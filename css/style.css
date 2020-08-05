@@ -167,29 +167,36 @@ flex-flow: column;
 /* =====================================
    Media Queries
 ======================================== */
+
+@media only screen and (min-width: 500px) {
+
+#navbarMenu {
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  text-align: center;
+  border: none;
+}
+
+.nav-item {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: .5em 1em;
+  margin: 0 1em;
+}
+
+.nav-item:hover {
+  transition: .5s;
+  color: #0086b3;
+}
+
+}
+
 @media only screen and (min-width: 700px) {
 
 
-  #navbarMenu {
-    justify-content: flex-end;
-  }
 
-  .navbar-nav {
-    text-align: center;
-    border: none;
-  }
-
-  .nav-item {
-    background-color: transparent;
-    border: 2px solid white;
-    padding: .5em 1em;
-    margin: 0 1em;
-  }
-
-  .nav-item:hover {
-    transition: .5s;
-    color: #0086b3;
-  }
 
    .banner-text {
      max-width: 50%;
