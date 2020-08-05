@@ -1,0 +1,230 @@
+/* =====================================
+   Page Styles
+======================================== */
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+img.logo {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.navbar-nav {
+  text-align: center;
+  border: 1px solid black;
+}
+
+.nav-item {
+  background-color: #f2f2f2;
+  border: 2px solid white;
+  padding: 1em;
+}
+
+
+
+.banner {
+  display: flex;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/shore_seagrass_web_2000.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.banner-text {
+  color: #f2f2f2;
+  margin: auto;
+  padding: 1em 2em;
+}
+
+.banner-text h1 {
+  font-size: 3em;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  grid-gap: 1rem;
+  margin: 1em auto 0;
+  max-width: 80%;
+}
+
+.card {
+  display: flex;
+  flex-flow: column;
+  padding: 1rem;
+}
+
+
+.button {
+  padding: 1em;
+  border-radius: .5em;
+  background-color: #0086b3;
+  color: #f2f2f2;
+  margin-top: auto;
+}
+
+.profiles {
+  background-color: #0086b3;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.profile-header h2 {
+  padding-top: 3em;
+}
+
+.profile-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.profile-cards {
+  text-align: center;
+  border: .5px solid #d9d9d9;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.profile-cards img {
+  border-radius: 50%;
+  max-width: 90%;
+}
+
+.card img {
+  max-width: 90%;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(250px, auto);
+  grid-gap: 1rem;
+  margin-top: 1em;
+}
+
+.feature-item {
+  display: flex;
+  flex-flow: column;
+  padding: 1em;
+  text-align: center;
+}
+
+.feature-item > h3 {
+  margin-top: 1em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  background-color: #f2f2f2;
+  margin-top: 2em;
+  padding: 1em;
+  border-top: 1px solid grey;
+}
+
+.social-icons {
+flex-flow: column;
+}
+
+.social-icons img {
+  padding: .5em;
+}
+
+.footer-copyright {
+  margin-top: 1em;
+}
+
+/* =====================================
+   Media Queries
+======================================== */
+@media only screen and (min-width: 700px) {
+
+
+  #navbarMenu {
+    justify-content: flex-end;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    border: none;
+  }
+
+  .nav-item {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: .5em 1em;
+    margin: 0 1em;
+  }
+
+  .nav-item:hover {
+    transition: .5s;
+    color: #0086b3;
+  }
+
+   .banner-text {
+     max-width: 50%;
+   }
+
+  .profile-wrapper {
+    flex-direction: row;
+    align-items: flex-start; /* To avoid stretching */
+  }
+
+
+  .profile-wrapper {
+    justify-content: center;
+  }
+
+  .profile-cards {
+    margin: 2em 1em 5em 1em;
+  }
+
+  .feature {
+    max-width: 80%;
+    margin: 1em auto 0;
+  }
+
+  .feature-item {
+    margin: 1em;
+  }
+
+footer {
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.footer-copyright {
+  margin: 0 0 0 auto;
+}
+
+}
