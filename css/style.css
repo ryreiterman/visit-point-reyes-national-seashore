@@ -64,7 +64,7 @@ img.logo {
 }
 
 .banner-text h1 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .card-header {
@@ -210,6 +210,10 @@ flex-flow: column;
 
    .banner-text {
      max-width: 75%;
+   }
+
+   .banner-text h1 {
+     font-size: 3em;
    }
 
   .profile-wrapper {
